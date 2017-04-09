@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RRUMobile.Views.AboutPage"
+             xmlns:vm="clr-namespace:RRUMobile.ViewModels;"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Welcome to RentersRus.com, LLC. founded in 2005. RentersRus.com is based in Concord, North Carolina. We are a National Online Rental Search Guide that focuses on Houses, Apartments, Condos, and Townhouses for rent.">
+            </Label>
+
+            <Label Text="Our primary customers are individual landlord, real estate investors, and property mangers who list their properties for rent.">
+            </Label>
+
+            <Label Text="RentersRus.com is dedicated to our mission of providing a web site that will deliver rental listings as quickly and efficiently as possible. Our sole purpose is to fill all your real estate needs in the rental market. We will find you the apartment of your choice, through our top notch search engine and give you the direct contact information to landlords and property managers nationwide.">
+            </Label>
+
+            <Label Text="RentersRus.com are member of the Better Business Bureau (BBB) and the Apartment Association (CAA). We also employ the latest technology, providing a safe secure method of accepting personal information.">
+            </Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
